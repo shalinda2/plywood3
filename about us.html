@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Titillium+Web&display=swap");
+
+      :root {
+        --font1: "Advent Pro", sans-serif;
+        --font2: "Titillium Web", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+
+      #header1 {
+        padding: 15px 335px 8px 373px;
+        background: white;
+        position: relative;
+        z-index: 1;
+        opacity: 0.9;
+      }
+
+      .maindiv {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #logo {
+        width: 20%;
+      }
+
+      #mainmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 42%;
+      }
+
+      #mainmenu > a {
+        position: relative;
+        left: 186px;
+        font-family: var(--font1);
+        font-size: 21px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 20px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      #home,
+      #menuicon {
+        width: 25px;
+      }
+
+      #mainmenu > a:hover,
+      .active {
+        border-bottom: 3px solid #000000;
+      }
+
+      /* Section 1 */
+
+      .sec1 {
+        background: url(img/sandakelum-plywood-wareshouse.jpg);
+        background-size: auto;
+        background-size: cover;
+        margin-top: -100px;
+        padding: 100px 0 0;
+        height: 560px;
+      }
+
+      .heading1 {
+        font-family: var(--font1);
+        text-transform: uppercase;
+        margin-top: 82px;
+        color: #ffffff;
+      }
+
+      .mid {
+        font-size: 35px;
+      }
+
+      .para1 {
+        font-family: var(--font2);
+        text-transform: none;
+        padding-right: 695px;
+        line-height: 1.5;
+        padding-top: 27px;
+      }
+
+      .top {
+        padding-top: 152px;
+        color: #fc0;
+        font-size: 27px;
+      }
+
+      .bkimg {
+        background: rgba(26, 26, 26, 0.3);
+        width: 100%;
+        height: 100%;
+        margin-top: -81px;
+      }
+
+      .midsec {
+        background: #a57b4a;
+        margin-top: -60px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .midsec > span {
+        font-family: var(--font1);
+        font-size: 35px;
+        color: white;
+        margin-left: 10px;
+        padding-right: 35px;
+      }
+
+      .num {
+        background: #fc0;
+        padding: 8px 47px;
+        font-size: 20px;
+        font-family: var(--font1);
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .num > img {
+        width: 20px;
+      }
+
+      .num > span {
+        font-size: 20px;
+      }
+
+      /* Section 2 */
+
+      #sec2 > h1 {
+        font-size: 35px;
+        margin-bottom: 45px;
+        margin-top: 60px;
+        font-family: var(--font1);
+      }
+
+      #sec2 > span {
+        font-size: 18px;
+        margin: 0;
+        padding: 10px;
+        line-height: 1.5;
+        font-family: var(--font1);
+      }
+
+      .outside {
+        margin: 45px 0;
+        position: relative;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 375px 375px 375px;
+        grid-gap: 10px;
+        grid-template-rows: 280px 210px 280px;
+      }
+
+      .grid::before {
+        width: 320px;
+        content: "";
+        height: 100px;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        background: #65352eff;
+        top: -15px;
+        left: -15px;
+      }
+
+      .img-set1 {
+        width: 100%;
+      }
+
+      #img1 {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      #img2 {
+        grid-column: 1;
+        grid-row: 2/3;
+      }
+
+      #img3 {
+        grid-column: 2;
+        grid-row: 1/2;
+      }
+
+      #img4 {
+        grid-column: 3;
+        grid-row: 2/3;
+      }
+
+      #img5 {
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      #img6 {
+        grid-column: 2;
+        grid-row: 3;
+      }
+
+      .grid::after {
+        width: 320px;
+        content: "";
+        height: 100px;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        background: #e8b673;
+        bottom: -10px;
+        right: 40px;
+      }
+
+      /* Footer */
+
+      #sec5 {
+        background: url(/img/plywood-dark-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 75px 0;
+        box-sizing: border-box;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo2 {
+        width: 200px;
+      }
+
+      .rights {
+        display: block;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-family: var(--font1);
+        margin-top: 20px;
+        font-size: 17px;
+      }
+
+      .fb {
+        width: 25px;
+      }
+
+      .f2 > a {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        padding-top: 25px;
+        font-size: 18px;
+        font-family: var(--font1);
+        margin-left: 70px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .f3 {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin: 0 0 14px;
+        justify-content: flex-start;
+        color: #ffffff;
+        box-sizing: border-box;
+        font-family: var(--font1);
+        font-size: 20px;
+      }
+
+      .f3 > div {
+        padding-top: 22px;
+      }
+
+      .f3 > div > span {
+        margin-top: 25px;
+        margin-left: 15px;
+      }
+
+      .footer-up {
+        margin-left: 135px;
+      }
+
+      .ff1 {
+        width: 0;
+        height: 0;
+        border: 32px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 32px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 32px;
+        border-bottom: 21px solid #e8b673;
+        border-top: none;
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      .ff2 {
+        font-family: var(--font1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrapper" id="header1">
+      <div class="maindiv">
+        <img src="img/logo.svg" alt="logo" id="logo" />
+        <nav id="mainmenu">
+          <a href="index.html">
+            <img src="img/icons/home.svg" alt="home" id="home"
+          /></a>
+          <a class="buttons active" href="about us.html">About Us</a>
+          <a class="buttons" href="all products.html">All products</a>
+          <a class="buttons" href="contact us.html">Contact Us</a>
+        </nav>
+        <img src="img/icons/menu.svg" alt="Menu" id="menuicon" />
+      </div>
+    </header>
+    <section class="sec1" class="wrapper">
+      <div class="bkimg">
+        <div class="heading1 wrapper">
+          <h1 class="tpnbt top">About</h1>
+          <h1 class="mid">Plywood Sandakelum</h1>
+          <p class="para1">
+            The business Sandakelum started with the sale of planks wood and has
+            grown into the sale of plywood boards and sheets today. Having won
+            the trust of our customers for over twenty years, we are always
+            committed to providing a better service to our customers.
+          </p>
+          <p class="para1">
+            We sell a number of imported plywood types in Sri Lanka. Contact us
+            for more information about our sheets and borads
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="midsec">
+      <span>Call Us :</span>
+      <div class="num">
+        <img src="/img/icons/call-icon.svg" alt="" />
+        <span>071 1234567 | 071 1234567</span>
+      </div>
+    </div>
+    <section id="sec2" class="wrapper">
+      <h1>Our Warehouse</h1>
+      <span
+        >Come to our warehouse and choose the plywood sheets and boards that
+        suit your needs. Our address is : No 241/A, Kadawatha rd, Ganemulla, Sri
+        Lanka
+      </span>
+      <div class="outside">
+        <div class="grid">
+          <img
+            class="img-set1"
+            id="img1"
+            src="/img/warehouse-1.jpg"
+            alt="warehouse-1"
+          />
+          <img
+            class="img-set1"
+            id="img2"
+            src="/img/warehouse-2.jpg"
+            alt="warehouse-2"
+          />
+          <img
+            class="img-set1"
+            id="img3"
+            src="/img/warehouse-3.jpg"
+            alt="warehouse-3"
+          />
+          <img
+            class="img-set1"
+            id="img4"
+            src="/img/warehouse-4.jpg"
+            alt="warehouse-4"
+          />
+          <img
+            class="img-set1"
+            id="img5"
+            src="/img/warehouse-5.jpg"
+            alt="warehouse-5"
+          />
+          <img
+            class="img-set1"
+            id="img6"
+            src="/img/warehouse-6.jpg"
+            alt="warehouse-6"
+          />
+        </div>
+      </div>
+    </section>
+    <footer id="sec5">
+      <div class="footer wrapper">
+        <div class="f1">
+          <img class="logo2" src="img/logo2.svg" alt="logo2" />
+          <span class="rights">All Rights reserved (c) 2024</span>
+          <img class="fb" src="img/icons/facebook.svg" alt="facebook" />
+        </div>
+        <div class="f2">
+          <a href="#">home</a>
+          <a href="#">About us</a>
+          <a href="#">All products</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="f3">
+          <div>
+            <img src="img/icons/call.svg" alt="call" />
+            <span>071 1234567</span>
+          </div>
+          <div>
+            <img src="img/icons/whatsapp.svg" alt="whatsapp" />
+            <span>071 1234567</span>
+          </div>
+          <div>
+            <img src="img/icons/location.svg" alt="location" />
+            <span>No 100/1, Yakkala.</span>
+          </div>
+          <div class="footer-up">
+            <span class="ff1"></span>
+            <span class="ff2">PAGE TOP</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

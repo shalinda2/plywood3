@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Titillium+Web&display=swap");
+
+      :root {
+        --font1: "Advent Pro", sans-serif;
+        --font2: "Titillium Web", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+
+      #header1 {
+        padding: 15px 335px 8px 373px;
+        background: white;
+        position: relative;
+        z-index: 1;
+        opacity: 0.9;
+      }
+
+      .maindiv {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #logo {
+        width: 20%;
+      }
+
+      #mainmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 42%;
+      }
+
+      #mainmenu > a {
+        position: relative;
+        left: 186px;
+        font-family: var(--font1);
+        font-size: 21px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 20px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      #home,
+      #menuicon {
+        width: 25px;
+      }
+
+      #mainmenu > a:hover,
+      .active {
+        border-bottom: 3px solid #000000;
+      }
+
+      /* Section 1 */
+
+      .sec1 {
+        background: url(img/plywood-decoration.jpg);
+        background-size: auto;
+        background-size: cover;
+        margin-top: -100px;
+        padding: 100px 0 0;
+        height: 560px;
+      }
+
+      .heading1 {
+        font-family: var(--font1);
+        text-transform: uppercase;
+        margin-top: 82px;
+        color: #ffffff;
+      }
+
+      .mid {
+        font-size: 35px;
+      }
+
+      .para1 {
+        font-family: var(--font2);
+        text-transform: none;
+        padding-right: 695px;
+        line-height: 1.5;
+        padding-top: 27px;
+      }
+
+      .top {
+        padding-top: 152px;
+        color: #fc0;
+        font-size: 27px;
+      }
+
+      .bkimg {
+        background: rgba(26, 26, 26, 0.3);
+        width: 100%;
+        height: 100%;
+        margin-top: -81px;
+      }
+
+      .midsec {
+        background: #a57b4a;
+        margin-top: -60px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .midsec > span {
+        font-family: var(--font1);
+        font-size: 35px;
+        color: white;
+        margin-left: 10px;
+        padding-right: 35px;
+      }
+
+      .num {
+        background: #fc0;
+        padding: 8px 47px;
+        font-size: 20px;
+        font-family: var(--font1);
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .num > img {
+        width: 20px;
+      }
+
+      .num > span {
+        font-size: 20px;
+      }
+
+      /* Section 3  */
+
+      #sec3 {
+        height: 1580px;
+      }
+
+      #sec3 > h1 {
+        font-family: var(--font1);
+        font-size: 35px;
+        margin-left: -14px;
+        margin-top: 53px;
+      }
+
+      #sec3 > p {
+        font-family: var(--font2);
+        margin-top: 70px;
+      }
+
+      .board > .sp2 {
+        display: block;
+        font-family: var(--font1);
+        font-size: 22px;
+        text-align: left;
+        font-weight: 500;
+        border-bottom: 7px solid #a45b4f;
+        margin-left: 20px;
+        padding-left: 30px;
+      }
+
+      .sp1 {
+        display: block;
+        background: #e8b673;
+        width: 0px;
+        height: 35px;
+        position: absolute;
+        left: 20px;
+        z-index: -1;
+        transition: 0.9s all;
+      }
+
+      #boards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: 30px;
+      }
+
+      .board {
+        position: relative;
+        margin-top: 30px;
+      }
+
+      .board::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 60px;
+        background: #e8b673;
+        position: absolute;
+        top: 0;
+        left: 20px;
+      }
+
+      .board:hover .sp1 {
+        width: 300px;
+        background: #e8b673;
+      }
+      /* Footer */
+
+      #sec5 {
+        background: url(/img/plywood-dark-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 75px 0;
+        box-sizing: border-box;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo2 {
+        width: 200px;
+      }
+
+      .rights {
+        display: block;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-family: var(--font1);
+        margin-top: 20px;
+        font-size: 17px;
+      }
+
+      .fb {
+        width: 25px;
+      }
+
+      .f2 > a {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        padding-top: 25px;
+        font-size: 18px;
+        font-family: var(--font1);
+        margin-left: 70px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .f3 {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin: 0 0 14px;
+        justify-content: flex-start;
+        color: #ffffff;
+        box-sizing: border-box;
+        font-family: var(--font1);
+        font-size: 20px;
+      }
+
+      .f3 > div {
+        padding-top: 22px;
+      }
+
+      .f3 > div > span {
+        margin-top: 25px;
+        margin-left: 15px;
+      }
+
+      .footer-up {
+        margin-left: 135px;
+      }
+
+      .ff1 {
+        width: 0;
+        height: 0;
+        border: 32px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 32px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 32px;
+        border-bottom: 21px solid #e8b673;
+        border-top: none;
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      .ff2 {
+        font-family: var(--font1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrapper" id="header1">
+      <div class="maindiv">
+        <img src="img/logo.svg" alt="logo" id="logo" />
+        <nav id="mainmenu">
+          <a href="index.html">
+            <img src="img/icons/home.svg" alt="home" id="home"
+          /></a>
+          <a class="buttons" href="about us.html">About Us</a>
+          <a class="buttons active" href="all products.html">All products</a>
+          <a class="buttons" href="contact us.html">Contact Us</a>
+        </nav>
+        <img src="img/icons/menu.svg" alt="Menu" id="menuicon" />
+      </div>
+    </header>
+    <section class="sec1" class="wrapper">
+      <div class="bkimg">
+        <div class="heading1 wrapper">
+          <h1 class="tpnbt top">All</h1>
+          <h1 class="mid">Products</h1>
+          <p class="para1">
+            We sell a range of plywood boards and sheets for your needs.
+            Currently We have plywood sheets ranging in size from 1mm to 25mm.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="sec3" class="wrapper">
+      <h1>Plywood Boards and Sheets</h1>
+      <p>
+        Here you will see our plywood boards and sheets and you can get them in
+        sizes of 1mm, 2.5mm, 4.5mm, 6.9mm, 12mm, 15mm, 18mm and 25mm.
+      </p>
+      <div id="boards">
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Shutter Board</span>
+          <img src="/img/products/shutter-board.jpg" alt="shutter-board" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Hard Board</span>
+          <img src="img/products/hard-board.jpg" alt="hard-board" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">PVC</span>
+          <img src="img/products/pvc-board.jpg" alt="pvc-board" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">M.D.F Melamine</span>
+          <img src="img/products/mdf-melamine.jpg" alt="mdf-melamine" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Chipboard Melamine</span>
+          <img
+            src="img/products/chipboard-melamine.jpg"
+            alt="chipboard-melamine"
+          />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Plywood Sheets</span>
+          <img src="img/products/plywood-sheet.jpg" alt="plywood-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Eco Sheets</span>
+          <img src="img/products/eco-sheet.jpg" alt="eco-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">HDX Sheets</span>
+          <img src="img/products/hdx-sheet.jpg" alt="hdx-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">MRX Sheets</span>
+          <img src="img/products/mrx-sheet.jpg" alt="mrx-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">HMR Sheets</span>
+          <img src="img/products/hmr-sheet.jpg" alt="hmr-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Filmface</span>
+          <img src="img/products/filmface.jpg" alt="filmface" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Mdf Sheets</span>
+          <img src="img/products/mdf-sheet.jpg" alt="mdf-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Cladding Sheets</span>
+          <img src="img/products/cladding-sheet.jpg" alt="cladding-sheet" />
+        </div>
+      </div>
+    </section>
+    <footer id="sec5">
+      <div class="footer wrapper">
+        <div class="f1">
+          <img class="logo2" src="img/logo2.svg" alt="logo2" />
+          <span class="rights">All Rights reserved (c) 2024</span>
+          <img class="fb" src="img/icons/facebook.svg" alt="facebook" />
+        </div>
+        <div class="f2">
+          <a href="#">home</a>
+          <a href="#">About us</a>
+          <a href="#">All products</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="f3">
+          <div>
+            <img src="img/icons/call.svg" alt="call" />
+            <span>071 1234567</span>
+          </div>
+          <div>
+            <img src="img/icons/whatsapp.svg" alt="whatsapp" />
+            <span>071 1234567</span>
+          </div>
+          <div>
+            <img src="img/icons/location.svg" alt="location" />
+            <span>No 100/1, Yakkala.</span>
+          </div>
+          <div class="footer-up">
+            <span class="ff1"></span>
+            <span class="ff2">PAGE TOP</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

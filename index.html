@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plywood Sadakelum</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Titillium+Web&display=swap");
+
+      :root {
+        --font1: "Advent Pro", sans-serif;
+        --font2: "Titillium Web", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      #header1 {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        opacity: 0.9;
+      }
+
+      #logo {
+        width: 20%;
+      }
+
+      #mainmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 42%;
+      }
+
+      #mainmenu > a {
+        position: relative;
+        left: 186px;
+        font-family: var(--font1);
+        font-size: 21px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 20px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      #home,
+      #menuicon {
+        width: 25px;
+      }
+
+      #mainmenu > a:hover,
+      .active {
+        border-bottom: 3px solid #000000;
+      }
+
+      #menuicon::after {
+        display: none;
+      }
+
+      /* Section 1 */
+
+      .sec1 {
+        width: 100%;
+        height: 540px;
+        background: url(/img/plywood-colorful-decorations.jpg) no-repeat top
+          center;
+        background-size: cover;
+        margin-top: -100px;
+        padding: 100px 0 0;
+      }
+
+      #img1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 141px;
+        z-index: -1;
+      }
+
+      .heading1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: var(--font1);
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 82px;
+        color: #ffffff;
+      }
+
+      .mid {
+        font-size: 35px;
+      }
+
+      .para1 {
+        font-size: 16px;
+        text-align: center;
+        margin: 40px auto;
+        font-family: var(--font2);
+        line-height: 1.5;
+        color: #ffffff;
+        margin-top: 70px;
+      }
+
+      .top {
+        margin-top: 75px;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      .bot {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .bkimg {
+        background: rgba(26, 26, 26, 0.3);
+        width: 100%;
+        height: 100%;
+        margin-top: -81px;
+      }
+
+      .btnboards {
+        background: linear-gradient(360deg, #e9b76d, #fecb07);
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-size: 25px;
+        display: block;
+        width: 223px;
+        margin: 60px auto;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-family: var(--font1);
+      }
+
+      /* Section 2 */
+
+      .sec2 {
+        background: #beb0a7;
+        width: 100%;
+        height: 285px;
+      }
+
+      #four-cards {
+        display: flex;
+        justify-content: center;
+      }
+
+      #four-cards > .card > img {
+        height: 33%;
+      }
+
+      .card {
+        position: relative;
+        width: 215px;
+        height: 220px;
+        background: #ffffff;
+        font-family: var(--font1);
+        margin-left: 46px;
+        margin-right: 67px;
+        text-align: center;
+        margin-top: -35px;
+        padding-top: 37px;
+      }
+
+      #four-cards > div > h1 {
+        padding-top: 10px;
+      }
+
+      #four-cards > div > p {
+        padding: 20px;
+        line-height: 1.5;
+      }
+
+      .card::before {
+        content: "";
+        left: -8px;
+        top: -14px;
+        width: 100px;
+        height: 25px;
+        display: block;
+        background: #e8b673;
+        position: absolute;
+        transition: 0.5s all;
+      }
+
+      .card:hover::before {
+        width: 230px;
+      }
+
+      .card::after {
+        content: "";
+        right: -8px;
+        bottom: -12px;
+        width: 100px;
+        height: 25px;
+        display: block;
+        background: #a45b4f;
+        position: absolute;
+        transition: 0.5s all;
+      }
+
+      .card:hover::after {
+        width: 230px;
+      }
+
+      /* Section 3 */
+
+      #sec3 {
+        height: 950px;
+      }
+
+      #sec3 > h1 {
+        font-family: var(--font1);
+        font-size: 35px;
+        margin-left: -14px;
+        margin-top: 53px;
+      }
+
+      #sec3 > p {
+        font-family: var(--font2);
+        margin-top: 10px;
+      }
+
+      .board > .sp2 {
+        display: block;
+        font-family: var(--font1);
+        font-size: 22px;
+        text-align: left;
+        font-weight: 500;
+        border-bottom: 7px solid #a45b4f;
+        margin-left: 20px;
+        padding-left: 30px;
+      }
+
+      .sp1 {
+        display: block;
+        background: #e8b673;
+        width: 0px;
+        height: 35px;
+        position: absolute;
+        left: 20px;
+        z-index: -1;
+        transition: 0.9s all;
+      }
+
+      #boards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: 30px;
+      }
+
+      .board {
+        position: relative;
+        margin-top: 30px;
+      }
+
+      .board::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 60px;
+        background: #e8b673;
+        position: absolute;
+        top: 0;
+        left: 20px;
+      }
+
+      .board:hover .sp1 {
+        width: 300px;
+        background: #e8b673;
+      }
+
+      /* Section 4 */
+
+      #sec4 {
+        background: linear-gradient(0deg, #beb0a7 81%, #fff 81%);
+        padding-bottom: 50px;
+      }
+
+      .plywood-home {
+        background: url(img/plywood-home.jpg);
+        background-size: cover;
+        height: 801px;
+        margin-top: -150px;
+      }
+
+      .wht-box {
+        background: white;
+        padding: 30px 45px;
+        width: 415px;
+        float: right;
+        margin-top: 50px;
+      }
+
+      .heading2 {
+        font-family: var(--font1);
+        font-size: 30px;
+        margin: 25px 0;
+      }
+
+      .wht-box > p {
+        font-size: 16px;
+        margin: 0;
+        padding: 10px;
+        line-height: 1.5;
+        font-family: var(--font2);
+      }
+
+      /* Footer */
+
+      #sec5 {
+        background: url(/img/plywood-dark-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 75px 0;
+        box-sizing: border-box;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo2 {
+        width: 200px;
+      }
+
+      .rights {
+        display: block;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-family: var(--font1);
+        margin-top: 20px;
+        font-size: 17px;
+      }
+
+      .fb {
+        width: 25px;
+      }
+
+      .f2 > a {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        padding-top: 25px;
+        font-size: 18px;
+        font-family: var(--font1);
+        margin-left: 70px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .f3 {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin: 0 0 14px;
+        justify-content: flex-start;
+        color: #ffffff;
+        box-sizing: border-box;
+        font-family: var(--font1);
+        font-size: 20px;
+      }
+
+      .f3 > div {
+        padding-top: 22px;
+      }
+
+      .f3 > div > span {
+        margin-top: 25px;
+        margin-left: 15px;
+      }
+
+      .footer-up {
+        margin-left: 135px;
+      }
+
+      .ff1 {
+        width: 0;
+        height: 0;
+        border: 32px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 32px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 32px;
+        border-bottom: 21px solid #e8b673;
+        border-top: none;
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      .ff2 {
+        font-family: var(--font1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrapper" id="header1">
+      <img src="img/logo.svg" alt="logo" id="logo" />
+      <nav id="mainmenu">
+        <a href="index.html" class="active">
+          <img src="img/icons/home.svg" alt="home" id="home"
+        /></a>
+        <a class="buttons" href="about us.html">About Us</a>
+        <a class="buttons" href="all products.html">All products</a>
+        <a class="buttons" href="contact us.html">Contact Us</a>
+      </nav>
+      <img src="img/icons/menu.svg" alt="Menu" id="menuicon" />
+    </header>
+    <section class="sec1" class="wrapper">
+      <div class="bkimg">
+        <div class="heading1">
+          <h1 class="tpnbt top">We are</h1>
+          <h1 class="mid">Plywood board & sheets sellers</h1>
+          <h2 class="tpnbt bot">In Sri lanka</h2>
+        </div>
+        <p class="para1">
+          Today there is a huge trend towards plywood in Sri Lanka as well as in
+          many other countries in the world, the main reason being the low
+          price, ease of use and special finish.<br />
+          There are many types of plywood boards and sheets available in the
+          market tailored to your various needs. Plywood Sandakelum is located
+          in Ganemulla, Sri Lanka and We sell<br />
+          plywood boards and plywood sheets in any quantity.
+        </p>
+        <a class="btnboards" href="#">Our Boards & Sheets</a>
+      </div>
+    </section>
+    <section class="sec2" class="wrapper">
+      <div id="four-cards">
+        <div class="card">
+          <img src="/img/icons/door.svg" alt="door" />
+          <h1>DOOR</h1>
+          <p>Plywood can be used to make your doors and windows</p>
+        </div>
+        <div class="card">
+          <img src="/img/icons/furniture.svg" alt="door" />
+          <h1>FURNITURE</h1>
+          <p>You can use plywood in your outdoor furniture</p>
+        </div>
+        <div class="card">
+          <img src="/img/icons/floor.svg" alt="door" />
+          <h1>FLOORS</h1>
+          <p>Interior plywood can be used for flooring</p>
+        </div>
+        <div class="card">
+          <img src="/img/icons/staircases.svg" alt="door" />
+          <h1>STAIRCASES</h1>
+          <p>Plywood will add a good look in your staircases</p>
+        </div>
+      </div>
+    </section>
+    <section id="sec3" class="wrapper">
+      <h1>Our Plywood Boards and Sheets</h1>
+      <p>
+        We have different types and sizes of plywood boards and sheets for your
+        needs. You can see them below
+      </p>
+      <div id="boards">
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Shutter Board</span>
+          <img src="/img/products/shutter-board.jpg" alt="shutter-board" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Hard Board</span>
+          <img src="img/products/hard-board.jpg" alt="hard-board" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">M.D.F Melamine</span>
+          <img src="img/products/mdf-melamine.jpg" alt="mdf-melamine" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">PVC</span>
+          <img src="img/products/pvc-board.jpg" alt="pvc-board" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Eco Sheets</span>
+          <img src="img/products/eco-sheet.jpg" alt="eco-sheet" />
+        </div>
+        <div class="board">
+          <span class="sp1"></span>
+          <span class="sp2">Cladding Sheets</span>
+          <img src="img/products/cladding-sheet.jpg" alt="cladding-sheet" />
+        </div>
+      </div>
+      <a class="btnboards" href="#">View All</a>
+    </section>
+    <section id="sec4">
+      <div class="plywood-home wrapper">
+        <div class="wht-box">
+          <h1 class="heading2">WHY PLYWOOD</h1>
+          <p>
+            Plywood is made with two or more layers of wood boards which are
+            pressed and glued together. And it is stronger and more durable than
+            ordinary single plank board due to its special manufacturing method.
+            That is one reason why plywood is so popular all over the world.
+            With plywood you can add beauty as well as natural look to your home
+            or garden.
+          </p>
+          <p>
+            There are many benefits to using plywood instead of the usual wood
+            panels and other substitutes. As Ceramic tiles, aluminum and other
+            substitutes are very expensive, using plywood will save your money.
+            Plywood is also non-corrosive and is suitable for chemical work
+            where aluminum and ceramic cannot be used. Plywood boards remain
+            stable to moisture and temperature changes than ordinary wood
+            panels.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="sec5">
+      <div class="footer wrapper">
+        <div class="f1">
+          <img class="logo2" src="img/logo2.svg" alt="logo2" />
+          <span class="rights">All Rights reserved (c) 2024</span>
+          <img class="fb" src="img/icons/facebook.svg" alt="facebook" />
+        </div>
+        <div class="f2">
+          <a href="#">home</a>
+          <a href="#">About us</a>
+          <a href="#">All products</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="f3">
+          <div>
+            <img src="img/icons/call.svg" alt="call" />
+            <span>071 1234567</span>
+          </div>
+          <div>
+            <img src="img/icons/whatsapp.svg" alt="whatsapp" />
+            <span>071 1234567</span>
+          </div>
+          <div>
+            <img src="img/icons/location.svg" alt="location" />
+            <span>No 100/1, Yakkala.</span>
+          </div>
+          <div class="footer-up">
+            <span class="ff1"></span>
+            <span class="ff2">PAGE TOP</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

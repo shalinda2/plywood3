@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Titillium+Web&display=swap");
+
+      :root {
+        --font1: "Advent Pro", sans-serif;
+        --font2: "Titillium Web", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* Header */
+
+      #header1 {
+        padding: 15px 335px 8px 373px;
+        background: white;
+        position: relative;
+        z-index: 1;
+        opacity: 0.9;
+      }
+
+      .maindiv {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #logo {
+        width: 20%;
+      }
+
+      #mainmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 42%;
+      }
+
+      #mainmenu > a {
+        position: relative;
+        left: 186px;
+        font-family: var(--font1);
+        font-size: 21px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 20px;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      #home,
+      #menuicon {
+        width: 25px;
+      }
+
+      #mainmenu > a:hover,
+      .active {
+        border-bottom: 3px solid #000000;
+      }
+
+      /* Section 1 */
+
+      .sec1 {
+        background: url(img/phone-on-plywood.jpg);
+        background-size: auto;
+        background-size: cover;
+        margin-top: -100px;
+        padding: 100px 0 0;
+        height: 560px;
+      }
+
+      .heading1 {
+        font-family: var(--font1);
+        text-transform: uppercase;
+        margin-top: 82px;
+        color: #ffffff;
+      }
+
+      .tpnbt > span {
+        margin-left: 10px;
+        font-size: 35px;
+        color: white;
+      }
+
+      .para1 {
+        font-family: var(--font2);
+        text-transform: none;
+        padding-right: 695px;
+        line-height: 1.5;
+        padding-top: 27px;
+      }
+
+      .top {
+        padding-top: 152px;
+        color: #fc0;
+        font-size: 27px;
+      }
+
+      .bkimg {
+        background: rgba(26, 26, 26, 0.3);
+        width: 100%;
+        height: 100%;
+        margin-top: -81px;
+      }
+
+      .midsec {
+        background: #a57b4a;
+        margin-top: -60px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .midsec > span {
+        font-family: var(--font1);
+        font-size: 35px;
+        color: white;
+        margin-left: 10px;
+        padding-right: 35px;
+      }
+
+      .num {
+        background: #fc0;
+        padding: 8px 47px;
+        font-size: 20px;
+        font-family: var(--font1);
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .num > img {
+        width: 20px;
+      }
+
+      .num > span {
+        font-size: 20px;
+      }
+
+      /* Section 2 */
+
+      .sec2 {
+        height: 315px;
+        width: 100%;
+        background: #beb0a7;
+        position: relative;
+        z-index: -1;
+      }
+
+      .sec2-img {
+        margin: 0 auto;
+        width: max-content;
+        padding: 23px 0;
+        position: relative;
+      }
+
+      .map-img {
+        width: 1106px;
+        height: 357px;
+        position: absolute;
+        top: 15px;
+        left: -554.4px;
+        margin-top: 23px;
+      }
+      .sec2-img > a {
+        text-decoration: none;
+      }
+
+      .sec2-img::before {
+        content: "";
+        display: block;
+        width: 145px;
+        height: 195px;
+        position: absolute;
+        background: #65362e;
+        top: -2px;
+        right: -589px;
+        margin-top: 20px;
+      }
+
+      .sec2-img::after {
+        content: "";
+        display: block;
+        width: 145px;
+        height: 195px;
+        position: absolute;
+        z-index: -1;
+        background: #a57b4a;
+        bottom: -368px;
+        left: -591px;
+      }
+
+      .map {
+        background: linear-gradient(360deg, #e9b76d, #fecb07);
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-family: var(--font1);
+        font-size: 25px;
+        display: block;
+        width: 255px;
+        margin: 110px auto 0;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        position: absolute;
+        top: 109px;
+        left: -130px;
+      }
+
+      /* Section 3 */
+
+      #sec3 {
+        height: 450px;
+      }
+
+      #sec3-id {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .sec3-1 {
+        margin-top: 185px;
+        font-family: var(--font1);
+        font-size: 20px;
+      }
+
+      .sec3-1 > h1 {
+        margin-bottom: 68px;
+      }
+
+      .sec3-2 {
+        margin: 35px 0 10px;
+      }
+
+      .mndiv {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .sec3-3 {
+        position: relative;
+        width: 260px;
+      }
+
+      .sec3-4 {
+        margin-bottom: 15px;
+        display: flex;
+        font-size: 27px;
+        font-weight: 500;
+      }
+
+      .sec3-5 {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #65362e;
+        margin: 7px 15px 0 0;
+      }
+
+      .sec3-6 {
+        background: url(img/plywood-bg.jpg);
+        transition: 0.5s all;
+        background-position: -50px 25px;
+        background-repeat: no-repeat;
+        height: 155px;
+      }
+
+      .sec3-6:hover{
+        height: auto;
+      }
+
+      .sec3-6:hover{
+        background-position: 0px;
+        margin: 0px;
+      }
+
+      .sec3-7 {
+        transition: 0.5s all;
+        border: 1px solid #65362e;
+        padding: 35px 40px 45px;
+        background: white;
+        margin-left: 8px;
+      }
+
+      .sec3-7:hover {
+        margin-left: 0px;
+        height: auto;
+      }
+
+      .sec3-8 {
+        display: flex;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 5px 0;
+        align-items: start;
+      }
+
+      .sec3-9 {
+        margin: 0px 15px -7px 0;
+      }
+
+      .sec3-10 {
+        position: relative;
+        width: 260px;
+      }
+      .sec3-12 {
+        position: relative;
+        width: 260px;
+      }
+
+      .sec3-11 {
+        position: relative;
+        width: 260px;
+      }
+      /* Footer */
+
+      #sec5 {
+        background: url(/img/plywood-dark-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 75px 0;
+        box-sizing: border-box;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo2 {
+        width: 200px;
+      }
+
+      .rights {
+        display: block;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-family: var(--font1);
+        margin-top: 20px;
+        font-size: 17px;
+      }
+
+      .fb {
+        width: 25px;
+      }
+
+      .f2 > a {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        padding-top: 25px;
+        font-size: 18px;
+        font-family: var(--font1);
+        margin-left: 70px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .f3 {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        margin: 0 0 14px;
+        justify-content: flex-start;
+        color: #ffffff;
+        box-sizing: border-box;
+        font-family: var(--font1);
+        font-size: 20px;
+      }
+
+      .f3 > div {
+        padding-top: 22px;
+      }
+
+      .f3 > div > span {
+        margin-top: 25px;
+        margin-left: 15px;
+      }
+
+      .footer-up {
+        margin-left: 135px;
+      }
+
+      .ff1 {
+        width: 0;
+        height: 0;
+        border: 32px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 32px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 32px;
+        border-bottom: 21px solid #e8b673;
+        border-top: none;
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      .ff2 {
+        font-family: var(--font1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrapper" id="header1">
+      <div class="maindiv">
+        <img src="img/logo.svg" alt="logo" id="logo" />
+        <nav id="mainmenu">
+          <a href="index.html"> <img src="img/icons/home.svg" alt="home" id="home" /></a>
+          <a class="buttons" href="about us.html">About Us</a>
+          <a class="buttons" href="all products.html">All products</a>
+          <a class="buttons active" href="contact us.html">Contact Us</a>
+        </nav>
+        <img src="img/icons/menu.svg" alt="Menu" id="menuicon" />
+      </div>
+    </header>
+    <section class="sec1" class="wrapper">
+      <div class="bkimg">
+        <div class="heading1 wrapper">
+          <h1 class="tpnbt top">Contact<span>Us</span></h1>
+          <p class="para1">
+            We are open on 9AM - 6PM everyday and our mobile numbers are
+            available 24/7.
+          </p>
+          <p class="para1">
+            If it is hard you to visit us then you can place your order by
+            contacting us and transfer money to our bank account. Call us for
+            more information.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="sec2 wrapper">
+      <div class="sec2-img">
+        <img class="map-img" src="/img/map.jpg" alt="map" />
+        <a class="map" href="https://maps.app.goo.gl/svEwLwwNG96NeDiF9"
+          >Open in Google Map</a
+        >
+      </div>
+    </section>
+    <section id="sec3" class="wrapper">
+      <div class="sec3-1" id="sec-3-id">
+        <h1>Contact Details</h1>
+        <span
+          >You can contact us at any time using the contact information
+          below</span
+        >
+      </div>
+      <div class="sec3-2 mndiv">
+        <div class="sec3-12">
+          <div class="sec3-3">
+            <h2 class="sec3-4"><span class="sec3-5"></span>Call Us</h2>
+          </div>
+          <div class="sec3-6">
+            <div class="sec3-7">
+              <span class="sec3-8">
+                <img class="sec3-9" src="/img/icons/call1.svg" alt="call1" />
+                071 1234567
+              </span>
+              <span class="sec3-8">
+                <img class="sec3-9" src="/img/icons/call1.svg" alt="call1" />
+                071 1234567
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-10">
+          <div class="sec3-3">
+            <h2 class="sec3-4"><span class="sec3-5"></span>Call Us</h2>
+          </div>
+          <div class="sec3-6">
+            <div class="sec3-7">
+              <span class="sec3-8">
+                <img class="sec3-9" src="/img/icons/call1.svg" alt="call1" />
+                071 1234567
+              </span>
+              <span class="sec3-8">
+                <img class="sec3-9" src="/img/icons/call1.svg" alt="call1" />
+                071 1234567
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-11">
+          <div class="sec3-3">
+            <h2 class="sec3-4"><span class="sec3-5"></span>Call Us</h2>
+          </div>
+          <div class="sec3-6">
+            <div class="sec3-7">
+              <span class="sec3-8">
+                <img class="sec3-9" src="/img/icons/call1.svg" alt="call1" />
+                071 1234567
+              </span>
+              <span class="sec3-8">
+                <img class="sec3-9" src="/img/icons/call1.svg" alt="call1" />
+                071 1234567
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="sec5">
+        <div class="footer wrapper">
+          <div class="f1">
+            <img class="logo2" src="img/logo2.svg" alt="logo2" />
+            <span class="rights">All Rights reserved (c) 2024</span>
+            <img class="fb" src="img/icons/facebook.svg" alt="facebook" />
+          </div>
+          <div class="f2">
+            <a href="#">home</a>
+            <a href="#">About us</a>
+            <a href="#">All products</a>
+            <a href="#">Contact us</a>
+          </div>
+          <div class="f3">
+            <div>
+              <img src="img/icons/call.svg" alt="call" />
+              <span>071 1234567</span>
+            </div>
+            <div>
+              <img src="img/icons/whatsapp.svg" alt="whatsapp" />
+              <span>071 1234567</span>
+            </div>
+            <div>
+              <img src="img/icons/location.svg" alt="location" />
+              <span>No 100/1, Yakkala.</span>
+            </div>
+            <div class="footer-up">
+              <span class="ff1"></span>
+              <span class="ff2">PAGE TOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
